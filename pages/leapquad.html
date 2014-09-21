@@ -1,0 +1,13 @@
+<h3>Leap Motion Quadcopter Controller</h3>
+
+<p>This summer, I bought a Leap Motion device. After playing with it upon first unpacking the box, I put it away on my bookshelf, where it sat for a month or two, collecting dust. Then, the idea popped into my head: what if I could control a quadcopter with it? After all, quadcopter movement is primarily accomplished through tilting, and the easiest way to communicate a tilt is to demonstrate it with your hands, so why not have a control mechanism that translates hand tilt to quadcopter tilt?</p>
+
+<p>I borrowed a quadcopter from a professor on campus, and got to work. First, I explore the leap motion APIs, seeing what information I could read from the device. As it turned out, the API reported euler angles for each hand present in the range of view. That was exactly what I needed from the Leap Motion side of the project. Then, I explored the A.R. Drone API. After searching for various libraries, I found that the node.js based <a href="http://github.com/felixge/node-ar-drone">node-ar-drone</a> made it very simple to send commands such as setting forward and sideways speeds to the drone. Thus, I decided to use this node.js library and leap motion's <a href="http://js.leapmotion.com/">leap.js</a> library, and write this entire project in JavaScript.</p>
+
+<p>Here, I encountered a slight problem. The leap.js library ran client-side, while the node-ar-drone library was a server side application. To connect these two, I used <a href="http://socket.io/">socket.io</a>, which made it very simple for me to send data from the client to the server. Although this does sacrifice speed and has latency issues, hand based control is not very precise to begin with, so for a short term prototype, this fix would do.  </p>
+
+<p>Currently, the client reads data from the Leap Motion, extracts the pitch, yaw, roll, and vertical position of the hand, and sends this as a JSON object to the server. The server, upon receiving a message of this sort, unpacks the data, and based on the direction and magnitudes of these values, decides what it should tell the quadcopter. After sending this data over WiFi to the A.R. Drone, the server sends back the computed orientation of the quadcopter. The client then uses this data to manipulate a 3D box represenation of the quadcopter, constructed using <a href="http://threejs.org/">three.js</a>.</p>
+
+<p>You can try this yourself if you have an A.R. Drone and a Leap Motion by getting (alpha quality) code from <a href="http://github.com/apoorva-sharma/leap_quad">my github</a>. For those of you who don't have these things handy, I'll have a video posted here shortly. Stay tuned!</p>
+
+<p><a href="#projects">Back to the project list</a></p>

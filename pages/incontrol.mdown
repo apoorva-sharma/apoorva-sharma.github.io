@@ -1,0 +1,12 @@
+![A Screenshot of InControl](../incontrol_screenshot.png "A screenshot of the InControl android app")
+### InControl
+
+At the 5C Hackathon, I worked collaboratively with 4 teammates to develop a system that allowed any smartphone to be used as a gyroscopic mouse for a computer. With this project, we won first place out of the 27 teams present at the Hackathon.
+
+We designed a system consisting of a central server, a computer client, and a mobile web app that all communicated with each other. In this system, the client registers with the server, and obtains a code. This is then displayed to the user, who can enter the code to the web app. When the mobile app sends the code to the server, the server gives the mobile app the location of the client, and thus a direct connection can be achieved. We used HTML5's WebSocket protocol for a TCP connection. 
+
+Using APIs built into modern browsers, we were able to access accelerometer and magnetometer data from the phone's hardware. We fed this data through the WebSocket and parsed it on the client, turning the phone's orientation into a coordinate on screen. We used python libraries to actually move the pointer position and activate clicks.
+
+After the hackathon, I have been working individually to write an android app that replaced the mobile app. Currently, I have a working UI and connection, but the rotation data is not correctly interpreted.
+
+[Back to the project list](#projects)

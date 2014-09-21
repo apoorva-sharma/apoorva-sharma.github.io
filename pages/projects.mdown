@@ -1,0 +1,28 @@
+*Take a look at some of my recent projects:*
+
+### [NiceURL](http://hidden-meadow-6432.herokuapp.com/ "NiceURL")
+
+I was trying to communicate a URL to a friend when I thought it might be easier to shorten it. However, the jumble of symbols that came out as the shorter URL wasn't any easier to communicate over the phone. From this, the idea for NiceURL was born. Instead of giving a shortened URL with just symbols, it gives you an alternative URL constructed with keywords extracted from the actual page. I've found that such URLs are much easier to remember and communicate. However, I haven't gotten around to buying a short domain name for it, so it isn't much more than a demo right now.
+[Try it here!](http://hidden-meadow-6432.herokuapp.com/ "NiceURL") Browse the code [on Github](https://github.com/apoorva-sharma/NiceURL "NiceURL on Github")
+
+### [Symbol Finder](http://fathomless-fortress-9050.herokuapp.com "Symbol Finder")
+
+As any science, math, or engineering student can attest, the need for greek letters comes up all the time in technical papers and presentations. Rather than find the symbols menu and then scroll through the symbols looking for the one I want, I would much rather be able to quickly find it by name. That's why I created this symbol finder. Matching symbols appear as you type using a custom fuzzy search algorithm. Hit the return key and the top result is selected, ready to be copied. [Give it a try here.](http://fathomless-fortress-9050.herokuapp.com "Symbol Finder") You can also browse the code for this on Github, [here.](https://github.com/apoorva-sharma/Symbol-Finder "Symbol Finder on Github")
+
+
+### [Leap Motion Quadcopter Controller](#leapquad "Leap Motion Quadcopter Controller")
+
+An intuitive quadcopter controller using a Leap Motion
+Deveice. It reads your hand's orientation, and uses that data to move an 
+AR Drone quadcopter appropriately. Usable, but not user-friendly in its current
+state.
+
+### [In Control](#incontrol "In Control")
+
+Use your smartphone as a gyroscopic mouse and wireless keyboard for your 
+computer! Built using the WebSocket API, Python, and Javascript.
+
+### Seam Carving
+
+Using dynamic programming concepts in Java, I implemented the seam carving 
+algorithm (or Content Aware Scale) as part of a CS60 assigment.
