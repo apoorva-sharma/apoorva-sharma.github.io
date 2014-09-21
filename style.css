@@ -1,0 +1,139 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,100,300,700,700italic,100italic,400italic|Roboto+Condensed");
+@import url("reset.css");
+html {
+  color: #fff;
+  box-sizing: border-box;
+}
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-weight: 600;
+}
+body {
+  font-family: Lato, 'Helvetica Neue', sans-serif;
+  background-color: #ddd;
+  color: #000;
+}
+h1,
+h2,
+h3 {
+  margin: 0.2em 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  line-height: 1.5em;
+  font-size: 16pt;
+  margin-bottom: 0.5em;
+  font-weight: 300;
+}
+hr {
+  background: url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  width: 100%;
+  height: 15px;
+  margin: 1.2em auto;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 720px;
+}
+.frontpage {
+  margin-top: 0;
+}
+.frontpage #header {
+  background: url("background-blur50.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  padding: 20px 0 5px;
+  border-bottom: 8px solid #07f;
+  color: #fff;
+}
+.frontpage h1 {
+  font-family: Lato, 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 64pt;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  letter-spacing: -3pt;
+}
+.frontpage .nav {
+  font-family: 'Roboto Condensed', 'Helvetica Neue', sans-serif;
+  font-size: 24pt;
+  font-style: italic;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0.2em 0;
+  padding: 20px 0 0;
+}
+.frontpage .nav a {
+  padding: 0 0.3em 6px 0.2em;
+  border-bottom: 8px solid transparent;
+  color: rgba(255,255,255,0.8);
+}
+.frontpage .nav a:focus {
+  outline: none;
+}
+.frontpage .nav a:hover {
+  border-color: rgba(255,255,255,0.2);
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  color: #fff;
+}
+.frontpage .nav a.curr {
+  border-color: rgba(255,255,255,0.5);
+  text-shadow: 0 0 5px rgba(0,0,0,0.9);
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+.frontpage #content {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  text-shadow: 0 0 5px #ddd;
+  color: #000;
+  padding-bottom: 50px;
+}
+.frontpage #content p a {
+  padding: 0px 3px;
+  border-bottom: 2px solid #07f;
+}
+.frontpage #content p a:hover {
+  color: #07f;
+}
+.frontpage #content h3 {
+  font-size: 24px;
+  margin-top: 1em;
+}
+.frontpage #content img {
+  float: left;
+  max-width: 225px;
+  margin: 0 10px 0 0;
+  background-color: rgba(255,255,255,0.15);
+  padding: 7px;
+}
+.construction {
+  margin: 250px auto;
+  text-align: center;
+}
+.construction img {
+  -webkit-filter: drop-shadow(0 0 2px #000);
+  -moz-filter: drop-shadow(0 0 2px #000);
+  -o-filter: drop-shadow(0 0 2px #000);
+  -ms-filter: drop-shadow(0 0 2px #000);
+  filter: drop-shadow(0 0 2px #000);
+}
